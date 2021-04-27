@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="/ressources/css/elements.css" type="text/css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+
+    .image {
+      opacity: 1;
+      display: block;
+      width: 100%;
+      height: auto;
+      transition: 0.5s ease;
+      backface-visibility: hidden;
+    }
+    .overlay {
+      position: absolute;
+      bottom: 0;
+      background: #424242;
+      background: #42424280; /* Black see-through */
+      color: white;
+      width: 100%;
+      transition: .5s ease;
+      opacity:0;
+      color: white;
+      font-size: 16px;
+      padding: 8px;
+      text-align: center;
+    }
+    .container:hover .overlay {
+      opacity: 1;
+    }
+
+    .row {
+      display: -ms-flexbox; /* IE10 */
+      display: flex;
+      -ms-flex-wrap: wrap; /* IE10 */
+      flex-wrap: wrap;
+      padding: 0 4px;
+    }
+
+    .column {
+      -ms-flex: 33.3%; /* IE10 */
+      flex: 33.3%;
+      max-width: 33.3%;
+      padding: 4px;
+    }
+
+    .column div {
+      margin-top: 8px;
+      vertical-align: middle;
+      width: 100%;
+    }
+
+    /* Makes one column only */
+    @media screen and (max-width: 600px) {
+      .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<body>
+  <div class="header">
+    FLClab
+  </div>
+  <div class="computernav">
+    <a href="/index.html">Home</a>
+    <a href="/research.html">Research</a>
+    <a href="/members.html">Members</a>
+    <a href="/contact.html">Contact</a>
+    <a class="active" href="/galery.html">Galery</a>
+    <a href="/fundings.html">Fundings</a>
+  </div>
+  <div class="mobilenav">
+    <a href="javascript:void(0);" class="icon" onclick="displayMenu()"> <i class="fa fa-bars"></i> </a>
+    <a href="/index.html">Home</a>
+    <div id="mobilemenu">
+      <a href="/research.html">Research</a>
+      <a href="/members.html">Members</a>
+      <a href="/contact.html">Contact</a>
+      <a class="active" href="/galery.html">Galery</a>
+      <a href="/fundings.html">Fundings</a>
+    </div>
+  </div>
+  <div class="content">
+    <h1>Welcome into our own galery of images</h1>
+    <p>We hope that you can appreciate the beauty in all of our images!</p>
+    <div class="row">
+      <div class="column">
+        <div class="container">
+          <img src="https://webcdn.leica-microsystems.com/fileadmin/_migrated/Products/sted-nanoscopes-stage-d_07.jpg"
+               alt="..." class="image">
+          <div class="overlay">
+              This image was taken on this kind of microscope. Antibodies used are the
+              following.
+          </div>
+        </div>
+        <div class="container">
+          <img src="https://cdn.technologynetworks.com/tn/images/body/download1576599806405.jpg"
+               alt="..." class="image">
+          <div class="overlay">
+              This image was taken on this kind of microscope. Antibodies used are the
+              following.
+          </div>
+        </div>
+        <div class="container">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS2O5LkXHsruegKyA07aUEeSYs3EHrVpQ-ZkQWy3RGHCnM23evz"
+               alt="..." class="image">
+          <div class="overlay">
+              This image was taken on this kind of microscope. Antibodies used are the
+              following.
+          </div>
+        </div>
+        <div class="container">
+          <img src="https://blogs.flinders.edu.au/microscopy-microanalysis/wp-content/uploads/sites/91/2019/07/airyscan-resolution-improvement.jpg"
+               alt="..." class="image">
+          <div class="overlay">
+              This image was taken on this kind of microscope. Antibodies used are the
+              following.
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="container">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSbUDr09tHDueLQk-cnRnxQ42rRNXuIW8Wpb_7Qn8URTZrLJKdP"
+               alt="..." class="image">
+          <div class="overlay">
+              This image was taken on this kind of microscope. Antibodies used are the
+              following.
+          </div>
+        </div>
+        <div class="container">
+          <img src="https://cdn.technologynetworks.com/tn/images/body/download1576599806405.jpg"
+               alt="..." class="image">
+          <div class="overlay">
+              This image was taken on this kind of microscope. Antibodies used are the
+              following.
+          </div>
+        </div>
+        <div class="container">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS2O5LkXHsruegKyA07aUEeSYs3EHrVpQ-ZkQWy3RGHCnM23evz"
+               alt="..." class="image">
+          <div class="overlay">
+              This image was taken on this kind of microscope. Antibodies used are the
+              following.
+          </div>
+        </div>
+        <div class="container">
+          <img src="https://cdn.technologynetworks.com/tn/images/body/download1576599806405.jpg"
+               alt="..." class="image">
+          <div class="overlay">
+              This image was taken on this kind of microscope. Antibodies used are the
+              following.
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="container">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSbUDr09tHDueLQk-cnRnxQ42rRNXuIW8Wpb_7Qn8URTZrLJKdP"
+               alt="..." class="image">
+          <div class="overlay">
+              This image was taken on this kind of microscope. Antibodies used are the
+              following.
+          </div>
+        </div>
+        <div class="container">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSbUDr09tHDueLQk-cnRnxQ42rRNXuIW8Wpb_7Qn8URTZrLJKdP"
+               alt="..." class="image">
+          <div class="overlay">
+              This image was taken on this kind of microscope. Antibodies used are the
+              following.
+          </div>
+        </div>
+        <div class="container">
+          <img src="https://cdn.technologynetworks.com/tn/images/body/download1576599806405.jpg"
+               alt="..." class="image">
+          <div class="overlay">
+              This image was taken on this kind of microscope. Antibodies used are the
+              following.
+          </div>
+        </div>
+        <div class="container">
+          <img src="https://cdn.technologynetworks.com/tn/images/body/download1576599806405.jpg"
+               alt="..." class="image">
+          <div class="overlay">
+              This image was taken on this kind of microscope. Antibodies used are the
+              following.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="footer-rowtext">
+      <div class="footer-columntext">
+        <h1>About</h1>
+        <p>We are the Intelligent Nanoscopy Group and we are interested in applying
+        machine learning tools to quantitatively analyse super-resolution imaging.
+        We are also developping super-resolution microscopes to better understand
+        synaptic plasticity.</p>
+      </div>
+      <div class="footer-columntext">
+        <h1>Selected publications</h1>
+        <p>Wiesner <i>et al.</i>, 2020</p>
+        <p>Desch&ecircnes <i>et al.</i>, 2020</p>
+      </div>
+      <div class="footer-columntext">
+        <h1>Contact Us</h1>
+        <p>Flavie Lavoie-Cardinal, PhD.</p>
+        <p>Professor at Dept. of Psychiatry and Neuroscience</p>
+        <p>Universit&eacute Laval, Qc, Canada</p>
+        <p>flavie.lavoie-cardinal@cervo.ulaval.ca</p>
+      </div>
+    </div>
+  </div>
+  <script src="/ressources/script/sticky.js"></script>
+  <script src="/ressources/script/mobilemenu.js"></script>
+</body>
+</html>

@@ -1,0 +1,219 @@
+
+* {
+  box-sizing: border-box;
+  font-family: "Myriad Pro", Myriad, system-ui;
+}
+
+html,body {
+    background-color: #ffffff;
+    margin:0;
+    padding:0;
+    height: 100%;
+}
+
+div {
+  background-color: #ffffff;
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  padding: 0px;
+  margin: 0px;
+  font-size: 32px;
+  font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-variant: small-caps;
+  text-align: left;
+}
+
+h2 {
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  text-align: justify;
+  padding: 16px;
+  justify-content: left;
+  font-size: 16px;
+}
+
+.header {
+  background-color: #ffffff;
+  background-image: url("/ressources/img/4colors_rotated.png");
+  background-attachment: fixed;
+  background-position: top;
+  background-size: 100%;
+  padding: 0px;
+  margin: 0 0;
+  font-size: 100px;
+  height: 200px;
+  font-style: normal;
+  font-weight: bold;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer {
+  background: #424242;
+  padding: 0px;
+  margin: 0 0;
+  font-size: 12px;
+  font-style: normal;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+/* footer columns */
+.footer-rowtext {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0px 0px;
+  background: none;
+}
+.footer-columntext {
+  -ms-flex: 33.3%; /* IE10 */
+  flex: 33.3%;
+  max-width: 33.3%;
+  padding: 16px;
+  background: none;
+  text-align: justify;
+}
+.footer-columntext h1 {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 16px;
+}
+.footer-columntext p {
+  font-size: 14px;
+  padding: 0;
+  margin: 0;
+}
+
+.fundings {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background: #cdcdcd;
+}
+
+.content {
+  display: flex;
+  /* height: 100%; */
+  flex-direction: column;
+  text-align: center;
+  background: white;
+  padding: 16px;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  background-color: white;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.sticky + .content {
+  padding-top: 64px;
+}
+
+/* Navigation bars */
+
+.computernav {
+  overflow: hidden;
+  background-color: #424242;
+  z-index: 1;
+}
+.computernav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 14px;
+}
+.computernav a:hover {
+  background-color: #000000;
+  color: white;
+}
+.computernav a.active {
+  background-color: #fcba03;
+  color: white;
+}
+
+.mobilenav {
+  overflow: hidden;
+  background-color: #fcba03;
+  z-index: 1;
+  /* position: relative; */
+}
+.mobilenav #mobilemenu {
+  display: none;
+  background-color: #424242;
+}
+.mobilenav a {
+  color: white;
+  padding: 20px 20px;
+  text-decoration: none;
+  font-size: 16px;
+  text-align: center;
+  display: block;
+}
+.mobilenav a.icon {
+  background: black;
+  display: block;
+}
+.mobilenav a:hover {
+  background-color: #000000;
+  color: white;
+}
+.mobilenav a:active {
+  background-color: #fcba03;
+  color: white;
+}
+/* .mobilenav.sticky + .content {
+  padding-top: 64px;
+} */
+.absolute {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.relative {
+  position: relative;
+}
+
+/* Changes displayed menu based on screen size */
+@media only screen and (max-width: 500px) {
+  .computernav {
+    display: none;
+  }
+  .mobilenav {
+    display: block;
+  }
+  .footer-columntext {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+@media only screen and (min-width: 501px) {
+  .computernav {
+    display: block;
+  }
+  .mobilenav {
+    display: none;
+  }
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="/ressources/css/elements.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+
+      .fundinglogo {
+        height:auto;
+        width: 100%;
+        float:center;
+      }
+
+      .fundinglogo:hover {
+        opacity: 0.5;
+        cursor: pointer;
+      }
+
+      .row {
+        display: -ms-flexbox; /* IE10 */
+        display: flex;
+        -ms-flex-wrap: wrap; /* IE10 */
+        flex-wrap: wrap;
+        padding: 0 0;
+        align-items: center;
+      }
+
+      .column {
+        -ms-flex: 33.3%; /* IE10 */
+        flex: 33.3%;
+        max-width: 33.3%;
+        padding: 4px;
+      }
+
+      .column img {
+        margin-top: 8px;
+        vertical-align: middle;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <body>
+    <div class="header">
+      FLClab
+    </div>
+    <div class="computernav">
+      <a href="/index.html">Home</a>
+      <a href="/research.html">Research</a>
+      <a href="/members.html">Members</a>
+      <a href="/contact.html">Contact</a>
+      <a href="/galery.html">Galery</a>
+      <a class="active" href="/fundings.html">Fundings</a>
+    </div>
+    <div class="mobilenav">
+      <a href="javascript:void(0);" class="icon" onclick="displayMenu()"> <i class="fa fa-bars"></i> </a>
+      <a href="/index.html">Home</a>
+      <div id="mobilemenu">
+        <a href="/research.html">Research</a>
+        <a href="/members.html">Members</a>
+        <a href="/contact.html">Contact</a>
+        <a href="/galery.html">Galery</a>
+        <a class="active" href="/fundings.html">Fundings</a>
+      </div>
+    </div>
+    <div class="content">
+      <h1>Fundings</h1>
+      <p>Below are the fundings that currently sponsoring us</p>
+      <div class="row">
+        <div class="column">
+          <a href="https://braincanada.ca">
+          <img src="https://braincanada.ca/wp-content/themes/brain-canada/img/logo-brain-canada.svg"
+                alt="" class="fundinglogo"></a>
+        </div>
+        <div class="column">
+          <a href="https://cihr-irsc.gc.ca/e/193.html">
+          <img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c2/Canadian_Institutes_of_Health_Research_Logo.svg/1200px-Canadian_Institutes_of_Health_Research_Logo.svg.png"
+                alt="" class="fundinglogo"></a>
+        </div>
+        <div class="column">
+          <a href="https://www.nserc-crsng.gc.ca/index_eng.asp">
+          <img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/3c/Natural_Sciences_and_Engineering_Research_Council_Logo.svg/1200px-Natural_Sciences_and_Engineering_Research_Council_Logo.svg.png"
+                alt="" class="fundinglogo"></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="footer-rowtext">
+        <div class="footer-columntext">
+          <h1>About</h1>
+          <p>We are the Intelligent Nanoscopy Group and we are interested in applying
+          machine learning tools to quantitatively analyse super-resolution imaging.
+          We are also developping super-resolution microscopes to better understand
+          synaptic plasticity.</p>
+        </div>
+        <div class="footer-columntext">
+          <h1>Selected publications</h1>
+          <p>Wiesner <i>et al.</i>, 2020</p>
+          <p>Desch&ecircnes <i>et al.</i>, 2020</p>
+        </div>
+        <div class="footer-columntext">
+          <h1>Contact Us</h1>
+          <p>Flavie Lavoie-Cardinal, PhD.</p>
+          <p>Professor at Dept. of Psychiatry and Neuroscience</p>
+          <p>Universit&eacute Laval, Qc, Canada</p>
+          <p>flavie.lavoie-cardinal@cervo.ulaval.ca</p>
+        </div>
+      </div>
+    </div>
+    <script src="/ressources/script/sticky.js"></script>
+    <script src="/ressources/script/mobilemenu.js"></script>
+  </body>
+</html>
